@@ -10,10 +10,10 @@
     <% end %>
 
     
-
-    
-    <%= link_to "Edit", edit_product_path(@product) %>
-    <%= button_to "Delete", @product, method: :delete, data: { turbo_confirm: "Are you sure?" } %>
+    <% if authenticated? %>
+        <%= link_to "Edit", edit_product_path(@product) %>
+        <%= button_to "Destroy", @product, method: :delete, data: { turbo_confirm: "Are you sure?" } %>
+    <% end %>
     
   </section>
 </section>

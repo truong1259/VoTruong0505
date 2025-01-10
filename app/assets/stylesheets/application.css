@@ -1,7 +1,4 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 1rem;
-  }
+
   
   nav {
     justify-content: flex-end;
@@ -37,4 +34,217 @@ body {
     flex-basis: 50%;
     max-width: 50%;
   }
+  
+
+  /* index */
+ /* Phong cách cho tiêu đề h1 */
+h1 {
+    font-size: 2.5rem; /* Kích thước chữ lớn */
+    color: #2c3e50; /* Màu chữ tối */
+    text-align: center; /* Căn giữa */
+    margin-bottom: 30px; /* Khoảng cách dưới */
+    font-weight: bold; /* Chữ đậm */
+    font-family: 'Arial', sans-serif; /* Font chữ hiện đại */
+    text-transform: uppercase; /* Chuyển chữ thường thành chữ in hoa */
+    letter-spacing: 1px; /* Khoảng cách giữa các chữ */
+  }
+  
+  /* Phong cách cho liên kết "New product" */
+  .new-product-link {
+    display: inline-block;
+    font-size: 1.2rem; /* Kích thước chữ */
+    color: #fff; /* Màu chữ trắng */
+    background-color: #28a745; /* Màu xanh lá nổi bật */
+    padding: 10px 20px; /* Khoảng cách trong */
+    border-radius: 8px; /* Bo góc */
+    text-decoration: none; /* Loại bỏ gạch chân */
+    margin: 0 auto; /* Căn giữa liên kết */
+    display: block;
+    width: max-content; /* Tự điều chỉnh theo nội dung */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+    transition: all 0.3s ease; /* Hiệu ứng hover mượt */
+  }
+  
+  .new-product-link:hover {
+    background-color: #218838; /* Màu xanh đậm hơn khi hover */
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15); /* Tăng hiệu ứng đổ bóng */
+  }
+  
+  /* Phong cách cho danh sách sản phẩm */
+  #products {
+    display: flex;
+    flex-wrap: wrap; /* Cho phép xuống dòng nếu không đủ chỗ */
+    gap: 20px; /* Khoảng cách giữa các sản phẩm */
+    justify-content: center; /* Căn giữa các sản phẩm */
+    margin-top: 20px; /* Khoảng cách trên */
+    padding: 10px; /* Khoảng cách trong */
+  }
+  
+  /* Phong cách cho mỗi sản phẩm */
+  #products > div {
+    background-color: #f8f9fa; /* Màu nền nhạt */
+    border: 1px solid #ddd; /* Đường viền nhạt */
+    border-radius: 10px; /* Bo góc */
+    padding: 15px; /* Khoảng cách trong */
+    width: 250px; /* Chiều rộng cố định */
+    text-align: center; /* Căn giữa nội dung */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hiệu ứng hover */
+  }
+  
+  #products > div:hover {
+    transform: translateY(-5px); /* Nhấc lên khi hover */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Tăng hiệu ứng đổ bóng */
+  }
+  
+  /* Phong cách cho liên kết tên sản phẩm */
+  #products > div a {
+    font-size: 1.1rem; /* Kích thước chữ */
+    color: #007bff; /* Màu xanh cho liên kết */
+    text-decoration: none; /* Loại bỏ gạch chân */
+    font-weight: bold;
+    transition: color 0.3s ease; /* Hiệu ứng hover mượt */
+  }
+  
+  #products > div a:hover {
+    color: #0056b3; /* Màu xanh đậm hơn khi hover */
+  }
+  
+  /* Phong cách cho liên kết bên trong sản phẩm */
+  #products > div a:last-child {
+    font-size: 0.9rem; /* Kích thước chữ nhỏ hơn */
+    color: #555; /* Màu xám cho liên kết thứ hai */
+  }
+  
+  #products > div a:last-child:hover {
+    color: #333; /* Màu đậm hơn khi hover */
+  }
+  
+  /* SHOW */
+  /* Phong cách chung */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333; /* Màu chữ chính */
+    background-color: #f8f9fa; /* Màu nền nhạt */
+    margin: 0;
+    padding: 20px;
+    
+  }
+  
+  /* Phong cách cho đoạn <p> chứa liên kết Back */
+  p {
+    margin-bottom: 20px;
+  }
+  
+  p a {
+    font-size: 1rem;
+    color: #007bff; /* Màu xanh Bootstrap */
+    text-decoration: none; /* Loại bỏ gạch chân */
+    transition: color 0.3s ease;
+  }
+  
+  p a:hover {
+    color: #0056b3; /* Màu xanh đậm hơn khi hover */
+  }
+  
+  /* Phong cách cho phần tử .product */
+  .product {
+    background-color: #fff; /* Màu nền trắng */
+    border: 1px solid #ddd; /* Đường viền nhạt */
+    border-radius: 8px; /* Bo góc */
+    padding: 20px; /* Khoảng cách trong */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Đổ bóng nhẹ */
+    max-width: 800px;
+    margin: 0 auto; /* Căn giữa trên trang */
+  }
+  
+  /* Phong cách cho ảnh sản phẩm */
+  .product img {
+    display: block;
+    max-width: 100%; /* Ảnh co giãn theo khung chứa */
+    border-radius: 8px; /* Bo góc cho ảnh */
+    margin-bottom: 20px; /* Khoảng cách dưới ảnh */
+  }
+  
+  /* Phong cách cho phần tử .product-info */
+  .product-info {
+    padding: 20px;
+  }
+  
+  /* Tiêu đề sản phẩm */
+  .product-info h1 {
+    font-size: 2rem;
+    color: #2c3e50; /* Màu chữ tối */
+    margin-bottom: 10px;
+  }
+  
+  /* Mô tả sản phẩm */
+  .product-info p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  /* Phong cách cho các liên kết Edit và nút Destroy */
+  .product-info a,
+  .product-info form button {
+    display: inline-block;
+    font-size: 1rem;
+    padding: 10px 15px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Liên kết Edit */
+  .product-info a {
+    color: #fff;
+    background-color: #28a745; /* Màu xanh lá */
+  }
+  
+  .product-info a:hover {
+    background-color: #218838; /* Màu xanh lá đậm hơn khi hover */
+  }
+  
+  /* Nút Destroy */
+  .product-info form button {
+    color: #fff;
+    background-color: #dc3545; /* Màu đỏ */
+  }
+  
+  .product-info form button:hover {
+    background-color: #c82333; /* Màu đỏ đậm hơn khi hover */
+  }
+  
+
+  /* newproduct */
+  .btn {
+    display: inline-block;
+    padding: 10px 20px; /* Khoảng cách trong */
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff; /* Màu chữ trắng */
+    background-color: #007bff; /* Màu xanh */
+    border: none;
+    border-radius: 5px; /* Bo góc */
+    text-decoration: none; /* Loại bỏ gạch chân */
+    cursor: pointer; /* Con trỏ dạng nút */
+    transition: background-color 0.3s ease; /* Hiệu ứng hover */
+    margin-right: 10px;
+  }
+  
+  .btn:hover {
+    background-color: #0056b3; /* Màu xanh đậm hơn khi hover */
+  }
+  
+
+  /* SIGN UP  */
+  /* Body background */
+
+  
   
